@@ -1,0 +1,1 @@
+# bloquear-copiar-e-colar
