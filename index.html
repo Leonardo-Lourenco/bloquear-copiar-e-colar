@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bloquear cópoia de conteúdo</title>
+
+	<script type="text/javascript">
+
+		function mensagem() {
+			alert('Conteudo bloqueado');
+			return false;
+		}
+
+
+		function bloqueiarCopia(Event) {
+
+			var Event = Event ? Event : window.event;
+			var tecla = (Event.keyCode) ? Event.keyCode : Event.which;
+
+			if (tecla == 17) {
+				mensagem();
+			}
+
+		
+		}
+		
+	</script>
+
+
+</head>
+<body>
+
+   <h1> Tutorial Coffee Tag</h1>
+ <br/>
+ 
+    <p>Abaixo, só para você ter uma ideia dos textos, você encontra um pequeno texto no qual quatro pessoas estão falando sobre o fim de semana delas. Será que foi bom, mais ou menos ou ruim? Leia o texto e descubra. Para ficar mais interessante, você poderá baixar um arquivo pdf no qual tem algumas atividades para você praticar o vocabulário (chunks of language) antes de ler o texto e assim entendê-lo melhor. Enfim, um presente para você que acompanha o Inglês na Ponta da Língua diariamente.
+
+
+     Abaixo, só para você ter uma ideia dos textos, você encontra um pequeno texto no qual quatro pessoas estão falando sobre o fim de semana delas. Será que foi bom, mais ou menos ou ruim? Leia o texto e descubra. Para ficar mais interessante, você poderá baixar um arquivo pdf no qual tem algumas atividades para você praticar o vocabulário (chunks of language) antes de ler o texto e assim entendê-lo melhor. Enfim, um presente para você que acompanha o Inglês na Ponta da Língua diariamente.</p>
+
+
+     <script type="text/javascript">
+
+     	document.onkeypress = bloqueiarCopia;
+     	document.onkeydown = bloqueiarCopia;
+     	document.oncontextmenu = mensagem;
+
+     
+     </script>
+
+
+</body>
+</html>
